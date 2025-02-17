@@ -1,3 +1,6 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbwardemon/saitama-to-hit/refs/heads/main/moveset"))()
+
+
 --Move & Ultimate Names
  
 local player = game.Players.LocalPlayer
@@ -840,6 +843,12 @@ end
 for _, message in ipairs(messages) do
     sendMessage(message)
     wait(0.9) 
+[[MIGHT HAVE TO REMOVE]]
+local soundeffect = Instance.new("Sound")
+                soundeffect.SoundId = "rbxassetid://5066021887"
+                soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
+                soundeffect:Play()
+                soundeffect.Volume = 4.5
 end
  
 --[[END OF QUOTES]]
@@ -1213,12 +1222,6 @@ local tool = Instance.new("Tool")
 mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "time travel (tp)" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
 
 [[END OF TP TOOL]]
-
-[[script]]
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tbwardemon/saitama-to-hit/refs/heads/main/moveset"))()
-
-[[END OF SCRIPT]]
 
 [[sounds]]
 
