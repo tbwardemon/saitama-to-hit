@@ -841,12 +841,6 @@ end
 for _, message in ipairs(messages) do
     sendMessage(message)
     wait(0.9) 
---[[MIGHT HAVE TO REMOVE]]
-local soundeffect = Instance.new("Sound")
-                soundeffect.SoundId = "rbxassetid://5066021887"
-                soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-                soundeffect:Play()
-                soundeffect.Volume = 4.5
 end
  
 --[[END OF QUOTES]]
@@ -1221,67 +1215,4 @@ mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.Req
 
 --[[END OF TP TOOL]]
 
---[[sounds]]
-
---[[MOVE 1]]
--- Define the move name
-local ToolName = "Overpowering Force"
-
--- Function to play the sound
-local function playSound()
-    local sound = Instance.new("Sound")
-    sound.SoundId = "rbxassetid://6581614725" -- Replace with your sound ID
-    sound.Volume = 1
-    sound.Parent = game.Workspace -- Set the parent to somewhere in the game world
-    sound:Play()
-    game:GetService("Debris"):AddItem(sound, 5) -- Clean up after 5 seconds
-end
-
--- Function to detect when the move is used
-local function onToolUsed(Tool)
-    if tool == ToolName then
-        playSound()
-    end
-end
-
---[[ MOVE 1 END]]
-
---[[MOVE 2]] 
-
-
-local ToolName = "Power Showcase"
-
-
-local function playsound()
-   local sound = Instance.new("sound)
-  sound.SoundId = "rbxassetid://5711961181"
-  sound.Volume = 1
-  sound.parent = game.Workspace
-  sound:play()
-  game:GetService("Debris"):AddItem(sound, 5)
-end
-
-
-local function onToolUsed(Tool)
-    if tool  == ToolName then
-      playSound()
-   end 
-end
-
---[[MOVE 2 END]]
- 
---[[MOVE 3]]
-
-local ToolName = "Push Assault"
-local function playsound()
-sound.SoundId = "rbxassetid://1058693352
-sound.volume = 1
-sound.parent = game.Workspace
-sound:play()
-game:GetService("Debris"):AddItem(sound, 5)
-end
-
---[[MOVE 3 END]] 
-
---[[MOVE 4]]
 
