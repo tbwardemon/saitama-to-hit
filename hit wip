@@ -1,7 +1,4 @@
 
-
-
-
 --Move & Ultimate Names
  
 local player = game.Players.LocalPlayer
@@ -844,7 +841,7 @@ end
 for _, message in ipairs(messages) do
     sendMessage(message)
     wait(0.9) 
-[[MIGHT HAVE TO REMOVE]]
+--[[MIGHT HAVE TO REMOVE]]
 local soundeffect = Instance.new("Sound")
                 soundeffect.SoundId = "rbxassetid://5066021887"
                 soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
@@ -1165,15 +1162,15 @@ Anim:AdjustSpeed(0)
 Anim.TimePosition = startTime
 Anim:AdjustSpeed(1)
  
-[[END OF RUN ANIM]]
+--[[END OF RUN ANIM]]
 
-[[ULT bar color]]
+--[[ULT bar color]]
 
 game.Players.LocalPlayer.PlayerGui.ScreenGui.MagicHealth.Health.Bar.Bar.ImageColor3 = Color3.fromRGB(255, 0, 0) -- red
 
-[[ULT BAR COLOR END]]
+--[[ULT BAR COLOR END]]
 
-[[sprint tool]]
+--[[sprint tool]]
 
 local tool = Instance.new("Tool")
     tool.Name = "time travel (run)"
@@ -1217,16 +1214,16 @@ local tool = Instance.new("Tool")
         end
     end)
 
-[[END OF SPRINT TOOL]]
+--[[END OF SPRINT TOOL]]
 
-[[tp tool]]
+--[[tp tool]]
 mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "time travel (tp)" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
 
-[[END OF TP TOOL]]
+--[[END OF TP TOOL]]
 
-[[sounds]]
+--[[sounds]]
 
-[[MOVE 1]]
+--[[MOVE 1]]
 -- Define the move name
 local ToolName = "Overpowering Force"
 
@@ -1247,9 +1244,9 @@ local function onToolUsed(Tool)
     end
 end
 
-[[ MOVE 1 END]]
+--[[ MOVE 1 END]]
 
-[[MOVE 2]] 
+--[[MOVE 2]] 
 
 
 local ToolName = "Power Showcase"
@@ -1271,9 +1268,9 @@ local function onToolUsed(Tool)
    end 
 end
 
-[[MOVE 2 END]]
+--[[MOVE 2 END]]
  
-[[MOVE 3]]
+--[[MOVE 3]]
 
 local ToolName = "Push Assault"
 local function playsound()
@@ -1284,7 +1281,7 @@ sound:play()
 game:GetService("Debris"):AddItem(sound, 5)
 end
 
-[[MOVE 3 END]] 
+--[[MOVE 3 END]] 
 
-[[MOVE 4]]
+--[[MOVE 4]]
 
